@@ -1,0 +1,52 @@
+//2015 -\/ C\+S101 //\+Group Number\+: 196
+
+/$\ast$ $\ast$\+Group Members\+:
+\begin{DoxyItemize}
+\item $\ast$\+O\+V Shashank 14\+D070021 (G\+R\+P Leader) $\ast$\+Ajinkya Kharalakar 14\+D070031 $\ast$\+Abhishek Konale 14\+D070010 $\ast$\+Shlok Nahar 140110023
+\item $\ast$/
+\end{DoxyItemize}
+
+/$\ast$ {\itshape Project Title\+: F\+I\+R\+E\+B\+I\+R\+D V based O\+B\+J\+E\+C\+T S\+O\+R\+T\+E\+R} $\ast$/
+
+//\+Instructions for setup\+:
+
+/$\ast$ $\ast$ Software Required
+\begin{DoxyItemize}
+\item $\ast$1.Atmel Studio 6 -\/ to compile and create the hex file to load on the F\+I\+R\+E\+B\+I\+R\+D $\ast$http\+://www.atmel.\+com/\+System/\+Base\+Form.aspx?target=tcm\+:26-\/65530
+\item $\ast$2.A\+V\+R Bootloader -\/ to bootload the hex file on the F\+I\+R\+E\+B\+I\+R\+D $\ast$http\+://www.nex-\/robotics.\+com/images/downloads/\+M2560\+\_\+\+F\+B\+V\+\_\+14\+M\+Hz\+\_\+115200\+\_\+\+U\+A\+R\+T2\+\_\+\+P\+E7.zip
+\item $\ast$3.Simple Code\+::\+Blocks -\/ to compile the G\+U\+I $\ast$http\+://www.cse.\+iitb.\+ac.\+in/$\sim$ranade/simplecpp/\+Simple\+Code\+Blocks.exe
+\item $\ast$/
+\end{DoxyItemize}
+
+//\+C\+O\+M Port Setting
+
+/$\ast$ $\ast$ $\ast$\+Attach the X\+Bee module using the adapter to the computer $\ast$\+Open Control Panel $\ast$\+Open Hardware and Sound $\ast$\+Under Devices and Printers open Device Manager $\ast$\+Now expand Ports(\+C\+O\+M and L\+P\+T) $\ast$\+Identify the C\+O\+M port corresponding to the X\+Bee and open its properties(Right-\/\+Click) $\ast$\+Click on the Port Settings tab. $\ast$\+Click on the Advanced button. A second dialog appears. $\ast$\+On this new dialog, there is “\+C\+O\+M Port Number” option near the top. Change it to C\+O\+M \textquotesingle{}9\textquotesingle{} and click on O\+K to close the dialog. You might get a warning message about other programs using the device and whether you wish to continue. Click on Yes. $\ast$\+Click on O\+K again to close the first dialog. $\ast$\+Close the Device Manager. Note that the Device Manager might still show the old C\+O\+M port number. If you close it and re-\/open it, you will then be able to see the new C\+O\+M port number listed. $\ast$\+Now the C\+O\+M port has been set
+\begin{DoxyItemize}
+\item $\ast$/
+\end{DoxyItemize}
+
+//\+Using the G\+U\+I
+
+/$\ast$ $\ast$ $\ast$\+First bootload the hex file created from the \hyperlink{main_8c}{main.\+c} code on the F\+I\+R\+E\+B\+I\+R\+D and ensure its out of its boot mode $\ast$\+Double-\/\+Click on the F\+I\+R\+E\+B\+I\+R\+D V controller.\+bat file (T\+H\+E B\+A\+T\+C\+H F\+I\+L\+E) $\ast$\+Follow the instructions than appear on the screen.
+\begin{DoxyItemize}
+\item $\ast$/
+\end{DoxyItemize}
+
+//\+G\+U\+I screen instructions
+
+/$\ast$ $\ast$ $\ast$\+The G\+U\+I provides two modes namely Manual and Autonoomous $\ast$\+Manual Mode\+: The user can control the bot using click buttons that appear on the screen after clicking the manual mode button
+\begin{DoxyItemize}
+\item The available functions are\+: F\+O\+R\+W\+A\+R\+D; B\+A\+C\+K ; L\+E\+F\+T ; R\+I\+G\+H\+T ; S\+T\+O\+P ;B\+U\+Z\+Z\+E\+R-\/\+O\+N;O\+F\+F; G\+R\+I\+P\+P\+E\+R -\/ P\+I\+C\+K;L\+E\+A\+V\+E
+\item Two different speeds of the F\+I\+R\+E\+B\+I\+R\+D V are also available.
+\item 
+\item Autonomous Mode\+: The F\+I\+R\+E\+B\+I\+R\+D V will use the logic in the code loaded on it along with its sensors to detect objects of the required colour.
+\item First the colour sensor requires configuration.
+\item So a black paper must be placed in front of the bot and then N\+E\+X\+T must be clicked
+\item Now the colour of objects the bot must detect and sort must be picked
+\item The bot turns left and searches for objects. So the bot must be placed such that the objects to be sorted are to its left.
+\item After placing it N\+E\+X\+T must be clicked
+\item The bot will now sort.
+\item $\ast$/
+\end{DoxyItemize}
+
+//\+E\+N\+D O\+F I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+S 

@@ -1,0 +1,112 @@
+\hypertarget{main_8c}{}\section{C\+:/\+Users/\+P\+C/\+Desktop/\+C\+S101-\/\+Embedded-\/\+Project-\/\+Object-\/\+Sorter/\+Codes/main.c File Reference}
+\label{main_8c}\index{C\+:/\+Users/\+P\+C/\+Desktop/\+C\+S101-\/\+Embedded-\/\+Project-\/\+Object-\/\+Sorter/\+Codes/main.\+c@{C\+:/\+Users/\+P\+C/\+Desktop/\+C\+S101-\/\+Embedded-\/\+Project-\/\+Object-\/\+Sorter/\+Codes/main.\+c}}
+{\ttfamily \#include \char`\"{}include/includeall.\+h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{main_8c_a598a3330b3c21701223ee0ca14316eca}{P\+I}~3.\+14159265
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{main_8c_a3281bf9c29bd377df9c685cec66fde8e}{cosine} (float angle)
+\item 
+float \hyperlink{main_8c_a044d1867b209e3617469a01fc680e08d}{sine} (float angle)
+\item 
+void \hyperlink{main_8c_a408ebc6b7a46cdb8673a47870a8e528a}{find\+\_\+path} (unsigned int \hyperlink{adc_8c_ab23c867e47c84ba2150303e480476510}{distance}, int angle)
+\item 
+void \hyperlink{main_8c_afe8174c5a571266e34f19cf520a20299}{avoid\+\_\+obstacle} ()
+\item 
+int \hyperlink{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{main} (void)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{main_8c_af663d867e0fad95534646213c9884e0b}{drop\+Radial\+Distance} \mbox{[}3\mbox{]} =\{400,400,400\}
+\item 
+int \hyperlink{main_8c_a8d5b5e9685a16077c100da91fbd59227}{drop\+Theta} \mbox{[}3\mbox{]} =\{-\/45,-\/90,-\/135\}
+\item 
+unsigned int \hyperlink{main_8c_a5033b00cd29777936337f97446c8b657}{last\+Object\+Range} =0
+\item 
+unsigned int \hyperlink{main_8c_a63df493a0bfc2eac0a6ac05925038e10}{radial\+Distance} =0
+\item 
+int \hyperlink{main_8c_a66b5106aecb38edc90335b6576b743c8}{theta} =0
+\item 
+int \hyperlink{main_8c_a528d22a2a1651a4831eb643884a3c718}{orientation} =0
+\item 
+float \hyperlink{main_8c_a89171bcfe8bf35d9f03fd073a2b651c3}{path\+\_\+degrees}
+\item 
+float \hyperlink{main_8c_ab285d17018e6683af6dad2983c5b9a6c}{path\+\_\+distance}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{main_8c_a598a3330b3c21701223ee0ca14316eca}{}\index{main.\+c@{main.\+c}!P\+I@{P\+I}}
+\index{P\+I@{P\+I}!main.\+c@{main.\+c}}
+\subsubsection[{P\+I}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+I~3.\+14159265}\label{main_8c_a598a3330b3c21701223ee0ca14316eca}
+
+
+\subsection{Function Documentation}
+\hypertarget{main_8c_afe8174c5a571266e34f19cf520a20299}{}\index{main.\+c@{main.\+c}!avoid\+\_\+obstacle@{avoid\+\_\+obstacle}}
+\index{avoid\+\_\+obstacle@{avoid\+\_\+obstacle}!main.\+c@{main.\+c}}
+\subsubsection[{avoid\+\_\+obstacle}]{\setlength{\rightskip}{0pt plus 5cm}void avoid\+\_\+obstacle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{main_8c_afe8174c5a571266e34f19cf520a20299}
+\hypertarget{main_8c_a3281bf9c29bd377df9c685cec66fde8e}{}\index{main.\+c@{main.\+c}!cosine@{cosine}}
+\index{cosine@{cosine}!main.\+c@{main.\+c}}
+\subsubsection[{cosine}]{\setlength{\rightskip}{0pt plus 5cm}float cosine (
+\begin{DoxyParamCaption}
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)}\label{main_8c_a3281bf9c29bd377df9c685cec66fde8e}
+\hypertarget{main_8c_a408ebc6b7a46cdb8673a47870a8e528a}{}\index{main.\+c@{main.\+c}!find\+\_\+path@{find\+\_\+path}}
+\index{find\+\_\+path@{find\+\_\+path}!main.\+c@{main.\+c}}
+\subsubsection[{find\+\_\+path}]{\setlength{\rightskip}{0pt plus 5cm}void find\+\_\+path (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{distance, }
+\item[{int}]{angle}
+\end{DoxyParamCaption}
+)}\label{main_8c_a408ebc6b7a46cdb8673a47870a8e528a}
+\hypertarget{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{}\index{main.\+c@{main.\+c}!main@{main}}
+\index{main@{main}!main.\+c@{main.\+c}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{main_8c_a840291bc02cba5474a4cb46a9b9566fe}
+\hypertarget{main_8c_a044d1867b209e3617469a01fc680e08d}{}\index{main.\+c@{main.\+c}!sine@{sine}}
+\index{sine@{sine}!main.\+c@{main.\+c}}
+\subsubsection[{sine}]{\setlength{\rightskip}{0pt plus 5cm}float sine (
+\begin{DoxyParamCaption}
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)}\label{main_8c_a044d1867b209e3617469a01fc680e08d}
+
+
+\subsection{Variable Documentation}
+\hypertarget{main_8c_af663d867e0fad95534646213c9884e0b}{}\index{main.\+c@{main.\+c}!drop\+Radial\+Distance@{drop\+Radial\+Distance}}
+\index{drop\+Radial\+Distance@{drop\+Radial\+Distance}!main.\+c@{main.\+c}}
+\subsubsection[{drop\+Radial\+Distance}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int drop\+Radial\+Distance\mbox{[}3\mbox{]} =\{400,400,400\}}\label{main_8c_af663d867e0fad95534646213c9884e0b}
+\hypertarget{main_8c_a8d5b5e9685a16077c100da91fbd59227}{}\index{main.\+c@{main.\+c}!drop\+Theta@{drop\+Theta}}
+\index{drop\+Theta@{drop\+Theta}!main.\+c@{main.\+c}}
+\subsubsection[{drop\+Theta}]{\setlength{\rightskip}{0pt plus 5cm}int drop\+Theta\mbox{[}3\mbox{]} =\{-\/45,-\/90,-\/135\}}\label{main_8c_a8d5b5e9685a16077c100da91fbd59227}
+\hypertarget{main_8c_a5033b00cd29777936337f97446c8b657}{}\index{main.\+c@{main.\+c}!last\+Object\+Range@{last\+Object\+Range}}
+\index{last\+Object\+Range@{last\+Object\+Range}!main.\+c@{main.\+c}}
+\subsubsection[{last\+Object\+Range}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int last\+Object\+Range =0}\label{main_8c_a5033b00cd29777936337f97446c8b657}
+\hypertarget{main_8c_a528d22a2a1651a4831eb643884a3c718}{}\index{main.\+c@{main.\+c}!orientation@{orientation}}
+\index{orientation@{orientation}!main.\+c@{main.\+c}}
+\subsubsection[{orientation}]{\setlength{\rightskip}{0pt plus 5cm}int orientation =0}\label{main_8c_a528d22a2a1651a4831eb643884a3c718}
+\hypertarget{main_8c_a89171bcfe8bf35d9f03fd073a2b651c3}{}\index{main.\+c@{main.\+c}!path\+\_\+degrees@{path\+\_\+degrees}}
+\index{path\+\_\+degrees@{path\+\_\+degrees}!main.\+c@{main.\+c}}
+\subsubsection[{path\+\_\+degrees}]{\setlength{\rightskip}{0pt plus 5cm}float path\+\_\+degrees}\label{main_8c_a89171bcfe8bf35d9f03fd073a2b651c3}
+\hypertarget{main_8c_ab285d17018e6683af6dad2983c5b9a6c}{}\index{main.\+c@{main.\+c}!path\+\_\+distance@{path\+\_\+distance}}
+\index{path\+\_\+distance@{path\+\_\+distance}!main.\+c@{main.\+c}}
+\subsubsection[{path\+\_\+distance}]{\setlength{\rightskip}{0pt plus 5cm}float path\+\_\+distance}\label{main_8c_ab285d17018e6683af6dad2983c5b9a6c}
+\hypertarget{main_8c_a63df493a0bfc2eac0a6ac05925038e10}{}\index{main.\+c@{main.\+c}!radial\+Distance@{radial\+Distance}}
+\index{radial\+Distance@{radial\+Distance}!main.\+c@{main.\+c}}
+\subsubsection[{radial\+Distance}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int radial\+Distance =0}\label{main_8c_a63df493a0bfc2eac0a6ac05925038e10}
+\hypertarget{main_8c_a66b5106aecb38edc90335b6576b743c8}{}\index{main.\+c@{main.\+c}!theta@{theta}}
+\index{theta@{theta}!main.\+c@{main.\+c}}
+\subsubsection[{theta}]{\setlength{\rightskip}{0pt plus 5cm}int theta =0}\label{main_8c_a66b5106aecb38edc90335b6576b743c8}

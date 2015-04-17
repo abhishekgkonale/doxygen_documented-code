@@ -1,0 +1,171 @@
+\hypertarget{color_8c}{}\section{C\+:/\+Users/\+P\+C/\+Desktop/\+C\+S101-\/\+Embedded-\/\+Project-\/\+Object-\/\+Sorter/\+Codes/include/color.c File Reference}
+\label{color_8c}\index{C\+:/\+Users/\+P\+C/\+Desktop/\+C\+S101-\/\+Embedded-\/\+Project-\/\+Object-\/\+Sorter/\+Codes/include/color.\+c@{C\+:/\+Users/\+P\+C/\+Desktop/\+C\+S101-\/\+Embedded-\/\+Project-\/\+Object-\/\+Sorter/\+Codes/include/color.\+c}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{color_8c_a8095df1fff54e54945d86387adf78d89}{color\+\_\+sensor\+\_\+pin\+\_\+config} (void)
+\item 
+void \hyperlink{color_8c_a184dad726a5b972d1a13dbbb818ec062}{color\+\_\+sensor\+\_\+pin\+\_\+interrupt\+\_\+init} (void)
+\item 
+\hyperlink{color_8c_afea150fcd685610cb9f7672fce361e53}{I\+S\+R} (I\+N\+T0\+\_\+vect)
+\item 
+void \hyperlink{color_8c_a23a4ea258cb3c4f5df1b2f76adbc5b86}{filter\+\_\+red} (void)
+\item 
+void \hyperlink{color_8c_a74dd28278098c0168fb0055ae7864c1b}{filter\+\_\+green} (void)
+\item 
+void \hyperlink{color_8c_a4c14823e18a2a06141b65040c7780984}{filter\+\_\+blue} (void)
+\item 
+void \hyperlink{color_8c_aaa847d2c6c6ae80210db884946d0bd32}{filter\+\_\+clear} (void)
+\item 
+void \hyperlink{color_8c_a96d01f9d454f1e14157adf5ee43acb7e}{color\+\_\+sensor\+\_\+scaling} ()
+\item 
+void \hyperlink{color_8c_a02c24d7bc5bb046420a53b927fa4c108}{red\+\_\+read} (void)
+\item 
+void \hyperlink{color_8c_a0d1193daee6a3b2a071f8c709db28214}{green\+\_\+read} (void)
+\item 
+void \hyperlink{color_8c_a031ab4567ccc59f62e1ab1afc6446886}{blue\+\_\+read} (void)
+\item 
+int \hyperlink{color_8c_af082905f7eac6d03e92015146bbc1925}{max} (int a, int b)
+\item 
+unsigned char \hyperlink{color_8c_a41df6cda8605db90a301b66c080e0ac6}{what\+\_\+color} ()
+\item 
+void \hyperlink{color_8c_a09c58086ff24dfa03c5da89613c8edbe}{C\+O\+L\+O\+R\+\_\+init} (void)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{color_8c_a15de605329c8bf35d7654746687e93d2}{threshold} =0
+\item 
+unsigned char \hyperlink{color_8c_a1b22d29045b7082acc1bd97847f37a03}{usercolour} =\textquotesingle{}N\textquotesingle{}
+\item 
+volatile unsigned long int \hyperlink{color_8c_aa932a2dee8f35d86a1c12e0c58673b47}{pulse} = 0
+\item 
+unsigned long int \hyperlink{color_8c_ab70453c4632a39ddc53d94628219ef7e}{red}
+\item 
+unsigned long int \hyperlink{color_8c_a915381809abff07da0e217ee7adcbe17}{blue}
+\item 
+unsigned long int \hyperlink{color_8c_ad2b0456b5bc5aeee09810c99b3173815}{green}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{color_8c_a031ab4567ccc59f62e1ab1afc6446886}{}\index{color.\+c@{color.\+c}!blue\+\_\+read@{blue\+\_\+read}}
+\index{blue\+\_\+read@{blue\+\_\+read}!color.\+c@{color.\+c}}
+\subsubsection[{blue\+\_\+read}]{\setlength{\rightskip}{0pt plus 5cm}void blue\+\_\+read (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{color_8c_a031ab4567ccc59f62e1ab1afc6446886}
+\hypertarget{color_8c_a09c58086ff24dfa03c5da89613c8edbe}{}\index{color.\+c@{color.\+c}!C\+O\+L\+O\+R\+\_\+init@{C\+O\+L\+O\+R\+\_\+init}}
+\index{C\+O\+L\+O\+R\+\_\+init@{C\+O\+L\+O\+R\+\_\+init}!color.\+c@{color.\+c}}
+\subsubsection[{C\+O\+L\+O\+R\+\_\+init}]{\setlength{\rightskip}{0pt plus 5cm}void C\+O\+L\+O\+R\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{color_8c_a09c58086ff24dfa03c5da89613c8edbe}
+\hypertarget{color_8c_a8095df1fff54e54945d86387adf78d89}{}\index{color.\+c@{color.\+c}!color\+\_\+sensor\+\_\+pin\+\_\+config@{color\+\_\+sensor\+\_\+pin\+\_\+config}}
+\index{color\+\_\+sensor\+\_\+pin\+\_\+config@{color\+\_\+sensor\+\_\+pin\+\_\+config}!color.\+c@{color.\+c}}
+\subsubsection[{color\+\_\+sensor\+\_\+pin\+\_\+config}]{\setlength{\rightskip}{0pt plus 5cm}void color\+\_\+sensor\+\_\+pin\+\_\+config (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{color_8c_a8095df1fff54e54945d86387adf78d89}
+\hypertarget{color_8c_a184dad726a5b972d1a13dbbb818ec062}{}\index{color.\+c@{color.\+c}!color\+\_\+sensor\+\_\+pin\+\_\+interrupt\+\_\+init@{color\+\_\+sensor\+\_\+pin\+\_\+interrupt\+\_\+init}}
+\index{color\+\_\+sensor\+\_\+pin\+\_\+interrupt\+\_\+init@{color\+\_\+sensor\+\_\+pin\+\_\+interrupt\+\_\+init}!color.\+c@{color.\+c}}
+\subsubsection[{color\+\_\+sensor\+\_\+pin\+\_\+interrupt\+\_\+init}]{\setlength{\rightskip}{0pt plus 5cm}void color\+\_\+sensor\+\_\+pin\+\_\+interrupt\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{color_8c_a184dad726a5b972d1a13dbbb818ec062}
+\hypertarget{color_8c_a96d01f9d454f1e14157adf5ee43acb7e}{}\index{color.\+c@{color.\+c}!color\+\_\+sensor\+\_\+scaling@{color\+\_\+sensor\+\_\+scaling}}
+\index{color\+\_\+sensor\+\_\+scaling@{color\+\_\+sensor\+\_\+scaling}!color.\+c@{color.\+c}}
+\subsubsection[{color\+\_\+sensor\+\_\+scaling}]{\setlength{\rightskip}{0pt plus 5cm}void color\+\_\+sensor\+\_\+scaling (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{color_8c_a96d01f9d454f1e14157adf5ee43acb7e}
+\hypertarget{color_8c_a4c14823e18a2a06141b65040c7780984}{}\index{color.\+c@{color.\+c}!filter\+\_\+blue@{filter\+\_\+blue}}
+\index{filter\+\_\+blue@{filter\+\_\+blue}!color.\+c@{color.\+c}}
+\subsubsection[{filter\+\_\+blue}]{\setlength{\rightskip}{0pt plus 5cm}void filter\+\_\+blue (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{color_8c_a4c14823e18a2a06141b65040c7780984}
+\hypertarget{color_8c_aaa847d2c6c6ae80210db884946d0bd32}{}\index{color.\+c@{color.\+c}!filter\+\_\+clear@{filter\+\_\+clear}}
+\index{filter\+\_\+clear@{filter\+\_\+clear}!color.\+c@{color.\+c}}
+\subsubsection[{filter\+\_\+clear}]{\setlength{\rightskip}{0pt plus 5cm}void filter\+\_\+clear (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{color_8c_aaa847d2c6c6ae80210db884946d0bd32}
+\hypertarget{color_8c_a74dd28278098c0168fb0055ae7864c1b}{}\index{color.\+c@{color.\+c}!filter\+\_\+green@{filter\+\_\+green}}
+\index{filter\+\_\+green@{filter\+\_\+green}!color.\+c@{color.\+c}}
+\subsubsection[{filter\+\_\+green}]{\setlength{\rightskip}{0pt plus 5cm}void filter\+\_\+green (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{color_8c_a74dd28278098c0168fb0055ae7864c1b}
+\hypertarget{color_8c_a23a4ea258cb3c4f5df1b2f76adbc5b86}{}\index{color.\+c@{color.\+c}!filter\+\_\+red@{filter\+\_\+red}}
+\index{filter\+\_\+red@{filter\+\_\+red}!color.\+c@{color.\+c}}
+\subsubsection[{filter\+\_\+red}]{\setlength{\rightskip}{0pt plus 5cm}void filter\+\_\+red (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{color_8c_a23a4ea258cb3c4f5df1b2f76adbc5b86}
+\hypertarget{color_8c_a0d1193daee6a3b2a071f8c709db28214}{}\index{color.\+c@{color.\+c}!green\+\_\+read@{green\+\_\+read}}
+\index{green\+\_\+read@{green\+\_\+read}!color.\+c@{color.\+c}}
+\subsubsection[{green\+\_\+read}]{\setlength{\rightskip}{0pt plus 5cm}void green\+\_\+read (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{color_8c_a0d1193daee6a3b2a071f8c709db28214}
+\hypertarget{color_8c_afea150fcd685610cb9f7672fce361e53}{}\index{color.\+c@{color.\+c}!I\+S\+R@{I\+S\+R}}
+\index{I\+S\+R@{I\+S\+R}!color.\+c@{color.\+c}}
+\subsubsection[{I\+S\+R}]{\setlength{\rightskip}{0pt plus 5cm}I\+S\+R (
+\begin{DoxyParamCaption}
+\item[{I\+N\+T0\+\_\+vect}]{}
+\end{DoxyParamCaption}
+)}\label{color_8c_afea150fcd685610cb9f7672fce361e53}
+\hypertarget{color_8c_af082905f7eac6d03e92015146bbc1925}{}\index{color.\+c@{color.\+c}!max@{max}}
+\index{max@{max}!color.\+c@{color.\+c}}
+\subsubsection[{max}]{\setlength{\rightskip}{0pt plus 5cm}int max (
+\begin{DoxyParamCaption}
+\item[{int}]{a, }
+\item[{int}]{b}
+\end{DoxyParamCaption}
+)}\label{color_8c_af082905f7eac6d03e92015146bbc1925}
+\hypertarget{color_8c_a02c24d7bc5bb046420a53b927fa4c108}{}\index{color.\+c@{color.\+c}!red\+\_\+read@{red\+\_\+read}}
+\index{red\+\_\+read@{red\+\_\+read}!color.\+c@{color.\+c}}
+\subsubsection[{red\+\_\+read}]{\setlength{\rightskip}{0pt plus 5cm}void red\+\_\+read (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{color_8c_a02c24d7bc5bb046420a53b927fa4c108}
+\hypertarget{color_8c_a41df6cda8605db90a301b66c080e0ac6}{}\index{color.\+c@{color.\+c}!what\+\_\+color@{what\+\_\+color}}
+\index{what\+\_\+color@{what\+\_\+color}!color.\+c@{color.\+c}}
+\subsubsection[{what\+\_\+color}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char what\+\_\+color (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{color_8c_a41df6cda8605db90a301b66c080e0ac6}
+
+
+\subsection{Variable Documentation}
+\hypertarget{color_8c_a915381809abff07da0e217ee7adcbe17}{}\index{color.\+c@{color.\+c}!blue@{blue}}
+\index{blue@{blue}!color.\+c@{color.\+c}}
+\subsubsection[{blue}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long int blue}\label{color_8c_a915381809abff07da0e217ee7adcbe17}
+\hypertarget{color_8c_ad2b0456b5bc5aeee09810c99b3173815}{}\index{color.\+c@{color.\+c}!green@{green}}
+\index{green@{green}!color.\+c@{color.\+c}}
+\subsubsection[{green}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long int green}\label{color_8c_ad2b0456b5bc5aeee09810c99b3173815}
+\hypertarget{color_8c_aa932a2dee8f35d86a1c12e0c58673b47}{}\index{color.\+c@{color.\+c}!pulse@{pulse}}
+\index{pulse@{pulse}!color.\+c@{color.\+c}}
+\subsubsection[{pulse}]{\setlength{\rightskip}{0pt plus 5cm}volatile unsigned long int pulse = 0}\label{color_8c_aa932a2dee8f35d86a1c12e0c58673b47}
+\hypertarget{color_8c_ab70453c4632a39ddc53d94628219ef7e}{}\index{color.\+c@{color.\+c}!red@{red}}
+\index{red@{red}!color.\+c@{color.\+c}}
+\subsubsection[{red}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long int red}\label{color_8c_ab70453c4632a39ddc53d94628219ef7e}
+\hypertarget{color_8c_a15de605329c8bf35d7654746687e93d2}{}\index{color.\+c@{color.\+c}!threshold@{threshold}}
+\index{threshold@{threshold}!color.\+c@{color.\+c}}
+\subsubsection[{threshold}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int threshold =0}\label{color_8c_a15de605329c8bf35d7654746687e93d2}
+\hypertarget{color_8c_a1b22d29045b7082acc1bd97847f37a03}{}\index{color.\+c@{color.\+c}!usercolour@{usercolour}}
+\index{usercolour@{usercolour}!color.\+c@{color.\+c}}
+\subsubsection[{usercolour}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char usercolour =\textquotesingle{}N\textquotesingle{}}\label{color_8c_a1b22d29045b7082acc1bd97847f37a03}
